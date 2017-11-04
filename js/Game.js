@@ -8,7 +8,7 @@
 */
 
 var Game = function(){
-  this.size = 5;
+  this.size = 9;
   this.gameboard = null;
   this.whitePawns = 0;
   this.blackPawns = 0;
@@ -25,11 +25,11 @@ var Game = function(){
 };
 
 Game.prototype.init = function(){
-  this.gameboard = new Board(5,"board");
+  this.gameboard = new Board(9,"board");
   var board = this.gameboard.board;
   
   var element = document.getElementById(this.gameboard.elementID);
-  var pawnSize = parseInt(element.getBoundingClientRect().width/15);
+  var pawnSize = parseInt(element.getBoundingClientRect().width/30);
 
   for(var y=0;y<this.size;y++){
     for(var x=0;x<this.size;x++){
