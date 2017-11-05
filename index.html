@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Alquerque Game</title>
-  <meta name="description" content="Alquerque Game">
-  <meta name="author" content="Boris Gallet, Benoit Rospars">
+  <title>Dhamet/Zamma Game</title>
+  <meta name="description" content="Dhamet/Zamma - Sand Game in Sahara">
+  <meta name="author" content="Boris Gallet, Benoit Rospars, M. Zaidane">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Optional theme -->
@@ -23,11 +23,10 @@
   <div class="wrapper">
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#game" aria-controls="game" role="tab" data-toggle="tab">Game</a></li>
+      <li role="presentation" class="active"><a href="#game" aria-controls="game" role="tab" data-toggle="tab">Dhamet Game</a></li>
       <li role="presentation"><a href="#history" aria-controls="history" role="tab" data-toggle="tab">History</a></li>
       <li role="presentation"><a href="#charts" aria-controls="charts" role="tab" data-toggle="tab">Charts</a></li>
-      <li role="presentation"><a href="#multigames" aria-controls="multigames" role="tab" data-toggle="tab">MultiGames</a></li>
-    </ul>
+       </ul>
 
     <!-- Tab panes -->
     <div class="tab-content">
@@ -35,18 +34,19 @@
         <div class="svg-wrapper">
           <svg id="board"></svg>
         </div>
-        <div class="controls">
-          <h3>Controls : </h3>
+        <div class="panel panel-default controls">
+          <div class="panel-heading">Controls </div>
           <li>
             <button id="newGame" class="btn btn-default">New Game</button>
             <button id="startGame" class="btn btn-default">Start Game</button>
             <button id="pauseGame" class="btn btn-default">Pause Game</button>
             <button id="nextStep" class="btn btn-default">Next Step</button>
-            <button id="runMultiGames" class="btn btn-default">Run MultiGames</button>
+            <!-- button id="runMultiGames" class="btn btn-default">Run MultiGames</button-->
           </li>
         </div>
-        <div class="settings">
-          <h3>Settings : </h3>
+        <div class="panel panel-default settings">
+          <div class="panel-heading">Settings </div>
+          <ul class="list-inline">
           <li>
             <label>Nb Games :</label>
             <input id="multiGamesEnabled" type="checkbox"/>
@@ -70,6 +70,7 @@
             <label>Depth : </label>
             <input id="blackIADepth" type="text"/>
           </li>
+          </ul>
         </div>
     </div>
     <div role="tabpanel" class="tab-pane" id="history">
